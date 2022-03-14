@@ -1,0 +1,21 @@
+{% extends "basic.html" %}
+
+{% block content %}
+<h3 class="text-center m-3">{{member_title}}</h3>
+
+<div class="member_list container">
+    <ul>
+        {% if member_show_list %}
+        {% for member in member_show_list %}
+        <li><a href="{% url 'members_app:members_info' member_id=member.id %}">{{member.first_name}} {{member.last_name}}</a></li>
+        
+        {% endfor %}
+        {% else %}
+        <h4>No Member</h4>
+        {% endif %}
+    </ul>
+</div>
+
+
+{% endblock %}
+   

@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    outline: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    background: #ffffff;
+}
+h1{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    font-size: 25px;
+
+}
+/*--------header_section-*/
+#main_nav_hed{
+    padding: 13px 0px;
+}
+.my_logo{
+    padding-left: 5%;
+}
+.my_nav{
+    padding: 0;
+    text-align: center;
+}
+
+.navigations_main{
+    float: right;
+    padding: 0px 0px 0px 100px;
+}
+.backgroundImage{
+    background:url("../../assests/images/mainHome.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.backgroundImage{
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    background-color: #000;
+}
+/* .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.6;
+    background-color: #000;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+}  */
+.home_img{
+    background-image: url(../assest/images/mainHome.jpg);
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    
+}
+.home_img nav{
+    background-color: rgba(0,0, 0,0.5);
+}
+.backgroundImage img{
+     width: 100%;
+     height: 70vh;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     background-size: cover;
+     background-repeat: no-repeat;
+     position: relative;
+     
+ }
+ .home_title{
+     position: absolute;
+     top: 30%;
+     left:30%;
+     background: center;
+     color: rgb(0, 202, 44);
+     
+ }
+ .home_title h1{ 
+     font-size: 35px;
+     text-transform: uppercase;
+     font-weight: bold;
+
+    }
+ .home_title h3{ 
+     font-size: 25px;
+     text-transform: capitalize;
+     font-weight: bold;
+
+    }
+.header_name{
+    background: #fcfcfc;
+    max-width:80% ;
+    max-height: auto;
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 3px solid rgb(211, 211, 211);
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+}
+.header_name h2{
+    text-align: center;
+}
+#loging{
+    margin-left:4%;
+} 
+#resi{
+    margin-right:4% ;
+    margin-left:5px ;
+}
+.main_section{
+ display: flex;
+ 
+}
+.left_section{
+    width: 30%;
+    height:auto;
+    left: 0;
+    margin: 40px 0px 0px 20px;
+    background: #fff9f9;
+    padding: 10px 20px;
+}
+.left_section img{
+    width: 100%;
+    height: auto;
+    border: 3px solid #ccc;
+}
+.left_section a{
+    text-align: center;
+    font-size: 12px;
+}
+.left_section .left_top_button{
+    text-decoration: none;
+    color: rgb(80, 5, 5);
+    background: none;  
+}
+.left_section p{
+    text-align: justify;
+    
+}
+.left_section small{
+    display:block;
+    padding: 0;
+    text-align: right;
+    font-size: 12px;
+}
+.left_top_button{
+    background-color: rgb(167, 167, 167);
+}
+.middle_section{
+    width: 100%;
+    height: auto;
+    text-align: justify;
+    padding: 50px;
+    
+}
+.middle_about{
+    padding-bottom: 30px;
+}
+.main_middle{
+    padding: 0px 20px;
+    display: flex;
+}
+.zoon_list{
+    width: 100%;
+    height: auto;
+    padding: 8px 20px;
+    border: 3px solid #ebebeb;
+    box-sizing: border-box;
+    margin: 8% 4%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.zoon_list img{
+    width: 100%;
+    height: 120px;
+}
+.name_pro{
+    text-align: end;
+    padding-right: 10px;
+}
+.button_details{
+    text-align: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.button_details a{
+    background: rgb(168, 115, 0);
+    padding: 3px 15px;
+    border: 1px solid rgb(168, 115, 0);
+    border-radius: 7px;
+    transition: all ease-in-out 500ms;
+    margin: 0px 0px;
+}
+
+.footer_section{
+    background: #252222;
+    color: #fff;
+    padding: 15px 0px;
+    text-align: center;
+}
+/*------about------*/
+.important_link ul li{
+    list-style-type: none;
+}
+/*-=========notice board=========*/
+.Notice_section{
+    padding: 50px 30px;
+}
+.Notice_section h5{
+    color: rgb(99, 0, 0);
+}
+.Notice_section .download{
+    text-decoration:none;
+    color: rgb(99, 0, 0);
+    transition: all ease-in-out 500ms;
+}
+.Notice_section .download:hover{
+    text-decoration:underline;
+    color: rgb(133, 102, 0);
+}
+.Notice_section .notice_link{
+    
+}
+.notice_download{
+    color: rgb(83, 61, 61);
+}
+    

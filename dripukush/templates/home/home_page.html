@@ -1,0 +1,9 @@
+{% extends "basic.html" %}
+
+{% block content %}
+<h1 class="text-center">{{text}}</h1>
+<img src="/media/home/{{profile_data.image.url}}" alt="">
+<h2>{{profile_data.title}}</h2>
+<h2>{{profile_data.subtitle}}</h2>
+{% endblock %}
+   
