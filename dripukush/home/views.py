@@ -14,4 +14,4 @@ def home(request):
         'text':'This is home page',
         'profile_data': home_profile
     }
-    return render(request, 'home/home_page.html', context=diction)
+    return render(request, 'Home/home_page.html', context=diction)

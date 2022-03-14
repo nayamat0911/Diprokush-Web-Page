@@ -6,4 +6,4 @@ def about_page(request):
         'title':'About',
         'text':'This is About page'
     }
-    return render(request, 'aboutPages/about_page.html', context=diction)
+    return render(request, 'About/about_page.html', context=diction)
