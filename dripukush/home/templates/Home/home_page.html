@@ -5,27 +5,144 @@
 {% endblock %}
 
 {% block title %}
-Home
+{{title}}
 {% endblock %}
 
 
 {% block content %}
 <!-- <h1 class="text-center">{{text}}</h1> -->
-<img src="/media/home/{{profile_data.image.url}}" alt="">
+<!-- <img src="/media/home/{{profile_data.image.url}}" alt=""> -->
 <div class="bg_img">
-    <img src="{% static 'home/img/a.jpg' %}" alt="">
+    <div class="heading">
+        <h1>{{profile_data.title}}</h1>
+        <h4>{{profile_data.subtitle}}</h4>
+        
+        
+    </div>
+    <img src="{% static 'home/img/b.jpg' %}" alt="">
 </div>
-<div class="heading">
-    <h1>{{profile_data.title}}</h1>
-    <h4>{{profile_data.subtitle}}</h4>
+
+<section>
+    <div class="goal">
+        <div class="container">
+            <h2>Our Goal and works Principle</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate a quaerat dolores, qui distinctio nam fuga? Soluta animi a exercitationem minus ea repellendus veniam ex cum magni, tenetur labore!</p>
+        </div>
+    </div>
+</section>
+
+
+<!----------->
+<section>
+    <div class="zoon_section">
+        <div class="container">
+            <h3>Zoon section</h3>
+            <div class="row at">
+                <div class="col-12 col-md-4 col-sm-6 col-lg-3 to">
+                    <a href="{% url 'zoon_profile:chittagong_page' %}">
+                        <div class="card too">
+                            <div class="card-header">
+                                <h4>Chittangog</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nobis quaerat soluta nemo libero praesentium.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 col-sm-6 col-lg-3">
+                    <a href="{% url 'zoon_profile:cumilla_page' %}">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Cumilla</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nobis quaerat soluta nemo libero praesentium.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 col-sm-6 col-lg-3">
+                    <a href="{% url 'zoon_profile:chittagong_page' %}">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Maymoshing</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nobis quaerat soluta nemo libero praesentium.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 col-sm-6 col-lg-3">
+                    <a href="{% url 'zoon_profile:syllet_page' %}">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Syllet</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nobis quaerat soluta nemo libero praesentium.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 col-sm-6 col-lg-3">
+                    <a href="{% url 'zoon_profile:syllet_page' %}">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Admanastive</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nobis</p>
+                                <ul>
+                                    <li><a href="">See Commitee Mambers</a></li>
+                                    <li><a href="">See all Mambers list</a></li>
+                                    <li><a href="">Latest News list</a></li>
+                                    <li><a href="">Notice</a></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer text-center">
+                                Read All info
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 col-sm-6 col-lg-3">
+                    <a href="{% url 'zoon_profile:syllet_page' %}">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Power plant</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="{% static 'home/img/images.jpg' %}" alt="" style="width: 100%; height:auto;">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 col-sm-6 col-lg-3">
+                    <a href="{% url 'zoon_profile:syllet_page' %}">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Project</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nobis</p>
+                                <ul>
+                                    <li><a href="">See Commitee Mambers</a></li>
+                                    <li><a href="">See all Mambers list</a></li>
+                                    <li><a href="">Latest News list</a></li>
+                                    <li><a href="">Notice</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     
-</div>
-<div class="">
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex animi commodi fugit dolor. Ipsam temporibus voluptatum obcaecati dignissimos magnam rem officiis fugit hic quidem iure ullam, ut laboriosam eveniet. Illum.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi at sequi rerum? Voluptate cupiditate molestiae nam? Vel dolore eligendi cumque dolores mollitia incidunt eveniet voluptates quaerat itaque nulla consequuntur maxime similique amet, blanditiis ipsa sequi aliquam a sint! Esse aut sed eius nemo distinctio, fugit est molestias temporibus natus odio? Magnam corporis laboriosam dicta eveniet dolorum odit veniam magni saepe id, distinctio rerum nostrum, sequi officiis quidem quo quaerat, nihil culpa consectetur quisquam dolore. Assumenda unde, sed perferendis tenetur esse provident dolor consequatur maxime hic aspernatur inventore, placeat, impedit ipsum minus! Repellat quae, eos cum nulla doloribus voluptas facilis dolore! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis nam consequatur nulla quisquam esse rerum accusamus neque iusto provident, veniam tenetur necessitatibus magni mollitia quae officiis quam velit commodi cum, molestiae, aliquid optio facere voluptatibus perferendis excepturi! Aliquid corporis, dolores dolorum amet laudantium maxime numquam quis nobis placeat minus. Sint, excepturi reiciendis perferendis quae atque beatae sapiente illum voluptatibus at totam voluptatum laboriosam, cupiditate doloremque ea? Culpa unde ducimus eum tempora sed commodi quo vero odit sunt, architecto eaque distinctio quibusdam. Tempore porro natus sapiente suscipit incidunt voluptate laudantium ipsum, quia magni similique iusto laboriosam consectetur cum. Eum autem vitae possimus totam necessitatibus aspernatur soluta, hic dignissimos sapiente, vero tempore reprehenderit, at obcaecati exercitationem. Officia officiis asperiores dolorem praesentium cum optio excepturi repudiandae. Autem earum unde enim, debitis molestiae ducimus inventore quidem dolor at quis, nisi quos laudantium doloribus alias totam aut ullam eligendi deserunt voluptas praesentium. Pariatur distinctio ipsam minima maiores facilis repudiandae dolore eaque facere dolor soluta sunt magnam laborum eos ullam non, culpa modi error? Dolor consectetur ipsam tempora pariatur beatae, harum voluptas voluptate reiciendis illum alias reprehenderit unde sint quisquam, expedita eligendi, obcaecati quos dolorum quidem quam porro distinctio. Voluptatibus, soluta. Vero natus nemo tenetur. Dignissimos odio in ipsam voluptatem, sapiente iure voluptatum. Voluptatibus vitae, inventore quibusdam officiis dolores earum quisquam iusto quo quas tenetur sit atque dicta vel totam, distinctio dolorem. Ea optio ipsam voluptas laudantium cum fugiat sapiente iure ipsum quis autem? Illum vitae, voluptas error saepe corrupti quibusdam accusamus ipsa temporibus quis tempora nihil animi ducimus, voluptate facere earum. Cupiditate suscipit laborum dolorem, quisquam voluptate itaque accusamus nulla facilis eaque deleniti dolor quo, quam veritatis ullam. Reiciendis sunt nulla sequi. Nesciunt obcaecati, ipsam molestiae non enim sapiente culpa quia hic accusamus debitis, quibusdam voluptatum distinctio numquam. Ipsam quos accusamus hic adipisci cum qui.
-    </p>
-</div>
+</section>
+
 
 {% endblock %}
    

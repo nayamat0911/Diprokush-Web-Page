@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'session',
     'members',
     'about',
+    'zoon_profile',
 ]
 
 MIDDLEWARE = [

@@ -1,5 +1,14 @@
 {% extends "basic.html" %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'about/css/about.css' %}">
+{% endblock %}
+
+{% block title %}
+ About
+{% endblock %}
 
 {% block content %}
 <h1 class="text-center">{{text}}</h1>
+<h3>About section</h3>
 {% endblock %}

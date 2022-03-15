@@ -28,6 +28,7 @@ urlpatterns = [
     path('session/', include('session.urls')),
     path('members/', include('members.urls')),
     path('about/', include('about.urls')),
+    path('zoon/', include('zoon_profile.urls')),
     
 ] 
 
