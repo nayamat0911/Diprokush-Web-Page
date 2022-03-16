@@ -4,6 +4,16 @@ from PIL import Image
 
 
 # Create your models here.
+
+
+class New_User(models.Model):
+    name = models.CharField(max_length=70)
+    email = models.EmailField()
+    password1 = models.CharField(max_length=30)
+    password2 = models.CharField(max_length=30 )
+
+
+
 class UserProfile(models.Model):
     GENDER_CHOICE=(
         ('Male','Male'),

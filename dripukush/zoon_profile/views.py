@@ -3,11 +3,11 @@ from .models import Zoon_Profile
 
 
 def Chittagong(request):
-    zoon_data = Zoon_Profile.objects.get()
+    # zoon_data = Zoon_Profile.objects.get()
     diction={
         'title':'chittagong',
         'zoon_text':'This is Chitagong Zoon page',
-        'pro_data': zoon_data
+        # 'pro_data': zoon_data
     }
     return render(request, 'zoon/chittagong.html', context=diction)
 

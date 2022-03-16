@@ -1,13 +1,16 @@
+from cProfile import label
 from django.contrib.auth import models
 from django.contrib.auth.forms import UserCreationForm
 from django import forms
-from django.contrib.auth.models import User
+from session.models import New_User
 from django.forms import fields, widgets
 
-class SignUpForm(UserCreationForm):
+class SignUpForm(forms.ModelForm):
     class Meta:
-        model=User
-        fields=('username','email','first_name', 'last_name' )
+        model=New_User
+        fields=('name','email','password1','password2'  )
+        labels = {'name':'Your Name:', 'email':'Enter Email:', 'password1':'Password', 'password2':'Confirm Password'}
+        widgets = {'password1':forms.PasswordInput, 'password2':forms.PasswordInput}
 
 #user profile form
 from .models import UserProfile

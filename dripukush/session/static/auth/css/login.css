@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    
+    
+}
+.login{
+    background-color: #e9bcb7;
+    background-image: linear-gradient(315deg, #e9bcb7 0%, #29524a 74%);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    color:#fff;
+}
+.user_login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.user_login h2{
+    padding: 0px 0px 20px 0px;
+    text-align: center;
+}
+.container{
+    max-width:1000px ;
+    max-height: 400px;
+    background-size: 100%;
+}
+.login_btn{
+    background: rgb(33, 83, 0);
+    padding: 8px 15px;
+    color: #fff;
+}
+.user_login .form_user small{
+    color: #fff;
+    font-size: 14px;
+}

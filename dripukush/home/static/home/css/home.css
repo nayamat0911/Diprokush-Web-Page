@@ -1,11 +1,11 @@
-h3{
-    color: red;
-}
+
 body{
-   color: #000;; 
+   color: #000;
+   
 }
 .bg_img{
     position:relative;
+    
 }
 .bg_img img{
     width: 100%;
@@ -27,18 +27,23 @@ body{
 }
 /*=========Goal and Principle part=========*/
 .goal{
-    background: #d1d1d1;
+    background: #f3f3f3;
     color: #000;
     padding: 60px 20px;
 }
 .goal h2{
     font-size: 38px;
     text-align: center;
-    padding: 0px 0px 20px 0px;
+    padding: 0px 0px 10px 0px;
 
 }
+.goal span{
+    font-size: 28px;
+    font-weight: 400;
+}
 .zoon_section{
-    padding: 60px 20px;
+    padding: 55px 30px;
+    color: #fa5c00;
 }
 .zoon_section h3{
     text-align: center;
@@ -62,4 +67,23 @@ a{
 .zoon_section .card-body p{
     text-align: justify;
     padding: 10px;
+}
+.zoon_link_item li{
+    list-style-type: none;
+    transition: all 500ms ease-in-out;
+}
+.zoon_link_item li:hover{
+    text-decoration: underline;
+    transition: all 500ms ease-in-out;
+}
+.footer{
+    background: rgb(220, 220, 220);
+    padding: 30px 0px 5px 0px;
+}
+.footer ul li{
+    list-style-type: none;
+}
+.footer p{
+    text-align: center;
+    font-size: 11px;
 }

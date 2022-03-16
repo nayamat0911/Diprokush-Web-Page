@@ -1,0 +1,138 @@
+
+.about_section{
+    margin: 0px;
+    padding: 0px;
+}
+.about_profile_view .img{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+.about_profile_view .img img{
+    width: 100%;
+    height:70vh;
+
+}
+
+/*=========about_section-=======*/
+.about_descrive{
+    padding: 0px;
+    margin: 0px;
+    background: #ffff;
+    color: #000;
+}
+.left_sec{
+    float: left;
+    width: 30%;
+    height: auto;
+    
+    
+}
+.left_sec .zoon_info{
+    padding: 30px 40px;
+}
+.left_sec .zoon_info h3{
+    text-align: center;
+    font-size: 24px;
+    padding: 20px 0px;
+    font-weight: bold;
+}
+.left_sec .zoon_info p{
+    text-align: justify;
+    font-size: 13px;
+}
+.main_about{
+    padding: 80px 40px 0px 30px;
+}
+.about_Com_member{
+    margin: 20px 15px;
+}
+.about_Com_member img{
+    width: 100%;
+    height: 35vh;
+}
+.about_Com_member small{
+    text-align: end;
+    font-size: 15px;
+    padding: 5px 10px 0px 0px;
+}
+.about_Com_member span{
+    text-align: end;
+    font-size: 13px;
+    padding: 0px 10px 0px 0px;
+}
+.about_Com_member .card-body a{
+    font-size: 13px;
+    color: #c77700;
+}
+
+.ctg_zoon_member{
+    width: 20%;
+    height: auto;
+    margin: 5% 3%;
+    padding: 30px 0px;
+}
+.ctg_zoon_member .card{
+    width: 100%;
+    height: 160px;
+}
+.ctg_zoon_member .card h5{
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 17px;
+    bottom: 10px;
+}
+
+.footer{
+    background: #252222;
+    color: #fff;
+    padding: 30px 0px;
+    /* text-align: center; */
+}
+.ctg_Zoon_btn{
+    background: #8a5111;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #351d02;
+    border-radius: 10px;
+    
+}
+.ctg_Zoon_btn a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 3px 20px;
+    margin: -5px 0px;
+    
+}
+.commite_all{
+    border: 1px ;
+}
+.commite_all .commite_all_item{
+    margin: 20px 0px 0px 0px;
+}
+.comitee_member_img{
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid #ccc; */
+    border-radius: 50%;
+}
+.comitee_member_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.comitee_member_img .name {
+    text-align: center;
+}
+.comitee_member_img .name span{
+   font-size: 11px;
+   line-height: 0px;
+   margin-block-start: 0em;
+   margin-block-end: 0em;
+}
+.comitee_member_img .name small{
+   font-size:smaller;
+   font-style: italic;
+}
