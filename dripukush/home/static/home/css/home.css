@@ -27,7 +27,7 @@ body{
 }
 /*=========Goal and Principle part=========*/
 .goal{
-    background: #f3f3f3;
+    background: #fdfdfd;
     color: #000;
     padding: 60px 20px;
 }
@@ -69,6 +69,7 @@ a{
     padding: 10px;
 }
 .zoon_link_item li{
+    list-style: none;
     list-style-type: none;
     transition: all 500ms ease-in-out;
 }

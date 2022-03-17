@@ -39,7 +39,7 @@
             <h3>Familarity with Our Region</h3>
             <div class="row at">
                 <div class="col-12 col-md-4 col-sm-6 col-lg-3">
-                    <a href="{% url 'zoon_profile:syllet_page' %}">
+                    <a href="{% url 'commitee_app:commitee' %}">
                         <div class="card">
                             <div class="card-header">
                                 <h4>Centeral Commitee</h4>
@@ -166,13 +166,16 @@
                     </a>
                 </div>
                 <div class="col-12 col-md-4 col-sm-6 col-lg-3">
-                    <a href="{% url 'zoon_profile:syllet_page' %}">
+                    <a href="{% url 'commitee_app:commitee' %}">
                         <div class="card">
                             <div class="card-header">
                                 <h4>Power plant</h4>
                             </div>
-                            <div class="card-body text-center">
-                                <img src="{% static 'home/img/icon/10.png' %}" alt="" style="width: 80px; height:80px; text-align: center;">
+                            <div class="card-body">
+                                <div class="img_div text-center">
+                                    <img src="{% static 'home/img/icon/10.png' %}" alt="" style="width: 80px; height:80px; text-align: center;">
+                                </div>
+                               
                                 <ul class="zoon_link_item">
                                     <li><a href=""><span>&#10026; </span> See Commitee Mambers</a></li>
                                     <li><a href=""><span>&#10026; </span>See all Mambers list</a></li>

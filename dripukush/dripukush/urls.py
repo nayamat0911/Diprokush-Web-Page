@@ -29,6 +29,7 @@ urlpatterns = [
     path('members/', include('members.urls')),
     path('about/', include('about.urls')),
     path('zoon/', include('zoon_profile.urls')),
+    path('commitee/', include('commitee.urls')),
     
 ] 
 

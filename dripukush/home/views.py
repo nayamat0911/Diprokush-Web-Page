@@ -7,6 +7,7 @@ def basic(request):
         
     }
     return render(request, 'basic.html', context=diction)
+
 def home(request):
     home_profile = Home.objects.get()
     diction={
@@ -15,3 +16,4 @@ def home(request):
         'profile_data': home_profile
     }
     return render(request, 'Home/home_page.html', context=diction)
+

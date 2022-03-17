@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'members',
     'about',
     'zoon_profile',
+    'commitee',
 ]
 
 MIDDLEWARE = [
