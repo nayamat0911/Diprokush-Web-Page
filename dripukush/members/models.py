@@ -22,6 +22,7 @@ class Members(models.Model):
     employee_info = models.ForeignKey(Office, on_delete=models.CASCADE)
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
+    
     office_address = models.CharField(max_length=30)
     city = models.CharField(max_length=30)
     description = models.CharField(max_length=100)

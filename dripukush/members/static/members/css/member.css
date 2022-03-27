@@ -1,0 +1,22 @@
+table{
+    border-collapse: collapse;
+    width:93%;
+}
+table, thead, tr,td{
+    border: 1px solid #000;
+    padding: 7px;
+}
+table h6{
+    padding: 5px;
+}
+inside_tble{
+    border: 0px;
+
+}
+.payment_cell{
+    padding: 0px;
+    text-align: center;
+}
+.payment_cell, table,tr td{
+    border-bottom: 0px;
+}

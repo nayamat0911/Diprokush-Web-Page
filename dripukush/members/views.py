@@ -30,14 +30,18 @@ def member_form(request):
     }
     return render(request, 'member_sec/members_form.html', context=diction)
 
-from .models import Members,ZoonList
+from .models import Members,ZoonList,Office
 
 def members_list(request):
+
+    office = Office.objects.order_by('zoon_list')
     member = Members.objects.order_by('first_name')
 
     diction={
         'title':'Member list',
         'member_title':'All Member List',
+
+        'member_office':office,
         'member_show_list':member
     }
     return render(request, 'member_sec/show_member_list.html', context=diction)

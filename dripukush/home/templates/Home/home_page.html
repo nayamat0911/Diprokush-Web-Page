@@ -16,8 +16,8 @@
     <div class="heading">
         <h1>{{profile_data.title}}</h1>
         <h4>{{profile_data.subtitle}}</h4>
-        
-        
+
+
     </div>
     <img src="{% static 'home/img/b.jpg' %}" alt="">
 </div>
@@ -26,7 +26,7 @@
     <div class="goal">
         <div class="container">
             <h2>Our Goal</h2>
-            <p><span>L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate a quaerat dolores, qui distinctio nam fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate enim fugiat obcaecati reprehenderit aliquid, natus a porro, eum impedit voluptas numquam tempora quaerat iste, minima soluta cupiditate id ut. Soluta animi a exercitationem minus ea repellendus veniam ex cum magni, tenetur labore!</p>
+            <p><span>L</span>lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Iste voluptate a quaerat dolores, qui distinctio nam fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate enim fugiat obcaecati reprehenderit aliquid, natus a porro, eum impedit voluptas numquam tempora quaerat iste, minima soluta cupiditate id ut. Soluta animi a exercitationem minus ea repellendus veniam ex cum magni, tenetur labore!</p>
         </div>
     </div>
 </section>
@@ -38,11 +38,34 @@
         <div class="container">
             <h3>Familarity with Our Region</h3>
             <div class="row at">
+              <!---zone section--->
+              <div class="col-12 col-md-4 col-sm-6 col-lg-3">
+                  <a href="{% url 'zoon_profile:syllet_page' %}">
+                      <div class="card">
+                          <div class="card-header">
+                              <h4>Dhaka</h4>
+                          </div>
+                          <div class="card-body">
+                              <div class="img_div text-center">
+                                  <img src="{% static 'home/img/icon/7.png' %}" alt="" style="width: 80px; height:80px; text-align: center;">
+                              </div>
+                              <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nobis</p> -->
+                              <ul class="zoon_link_item">
+                                  <li><a href=""><span>&#10026; </span> See Commitee Mambers</a></li>
+                                  <li><a href=""><span>&#10026; </span>See all Mambers list</a></li>
+                                  <li><a href=""><span>&#10026; </span>Latest News list</a></li>
+                                  <li><a href=""><span>&#10026; </span>Notice</a></li>
+                              </ul>
+                          </div>
+
+                      </div>
+                  </a>
+              </div>
                 <div class="col-12 col-md-4 col-sm-6 col-lg-3">
                     <a href="{% url 'commitee_app:commitee' %}">
                         <div class="card">
                             <div class="card-header">
-                                <h4>Centeral Commitee</h4>
+                                <h4>Cental Commitee</h4>
                             </div>
                             <div class="card-body">
                                 <div class="img_div text-center">
@@ -143,28 +166,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-12 col-md-4 col-sm-6 col-lg-3">
-                    <a href="{% url 'zoon_profile:syllet_page' %}">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4>Admanastive</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="img_div text-center">
-                                    <img src="{% static 'home/img/icon/7.png' %}" alt="" style="width: 80px; height:80px; text-align: center;">
-                                </div>
-                                <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nobis</p> -->
-                                <ul class="zoon_link_item">
-                                    <li><a href=""><span>&#10026; </span> See Commitee Mambers</a></li>
-                                    <li><a href=""><span>&#10026; </span>See all Mambers list</a></li>
-                                    <li><a href=""><span>&#10026; </span>Latest News list</a></li>
-                                    <li><a href=""><span>&#10026; </span>Notice</a></li>
-                                </ul>
-                            </div>
-                            
-                        </div>
-                    </a>
-                </div>
+
                 <div class="col-12 col-md-4 col-sm-6 col-lg-3">
                     <a href="{% url 'commitee_app:commitee' %}">
                         <div class="card">
@@ -175,7 +177,7 @@
                                 <div class="img_div text-center">
                                     <img src="{% static 'home/img/icon/10.png' %}" alt="" style="width: 80px; height:80px; text-align: center;">
                                 </div>
-                               
+
                                 <ul class="zoon_link_item">
                                     <li><a href=""><span>&#10026; </span> See Commitee Mambers</a></li>
                                     <li><a href=""><span>&#10026; </span>See all Mambers list</a></li>
@@ -187,31 +189,11 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-12 col-md-4 col-sm-6 col-lg-3">
-                    <a href="{% url 'zoon_profile:syllet_page' %}">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4>Project</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="img_div text-center">
-                                    <img src="{% static 'home/img/icon/14.png' %}" alt="" style="width: 80px; height:80px; text-align: center;">
-                                </div>
-                                <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nobis</p> -->
-                                <ul class="zoon_link_item">
-                                    <li><a href=""><span>&#10026; </span> See Commitee Mambers</a></li>
-                                    <li><a href=""><span>&#10026; </span>See all Mambers list</a></li>
-                                    <li><a href=""><span>&#10026; </span>Latest News list</a></li>
-                                    <li><a href=""><span>&#10026; </span>Notice</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+
             </div>
         </div>
     </div>
-    
+
 </section>
 <section>
     <div class="footer">
@@ -224,7 +206,7 @@
                             <li>Power Division</li>
                             <li>Power Cell</li>
                             <li>Bangladesh Power Development Borad</li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -236,4 +218,3 @@
 </section>
 
 {% endblock %}
-   

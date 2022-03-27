@@ -1,10 +1,62 @@
 {% extends "basic.html" %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'members/css/member.css' %}">
+{% endblock %}
+
+{% block title %}
+{{title}}
+{% endblock %}
 
 {% block content %}
 <h3 class="text-center m-3">{{member_title}}</h3>
 
 <div class="member_list container">
-    <ul>
+    <table>
+        <thead>
+            <tr>
+                <td>Image: </td>
+                <td>Name:</td>
+                <td>dipu id:</td>
+                <td>Ideb id:</td>
+                <td>Office:</td>
+                <td class="payment_cell"> <h6>Payment</h6>
+                    <table style="width: 100%;" class="inside_tble">
+                        <tr class="tr">
+                            <td class="td">January</td>
+                            <td>January</td>
+                            <td>January</td>
+                        </tr>
+                    </table>
+
+                </td>
+                
+            </tr>
+            
+        </thead>
+        <tbody>
+            {% for member in member_show_list %}
+            {% for member_of in member_office %}
+            
+            <tr>
+                <td>Img</td>
+                <td>
+                    <a href="{% url 'members_app:members_info' member_id=member.id %}">{{member.first_name}} {{member.last_name}}</a>
+                </td>
+                <td> dipukush ID</td>
+                <td>    IDEB ID</td>
+                <td>{{member_of.office_name}}<br> {{member.office_address}}, {{member.city }}</td>
+
+            </tr>
+            {% endfor %}
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+
+    <!-- <ul>
         {% if member_show_list %}
         {% for member in member_show_list %}
         <li><a href="{% url 'members_app:members_info' member_id=member.id %}">{{member.first_name}} {{member.last_name}}</a></li>
@@ -13,7 +65,7 @@
         {% else %}
         <h4>No Member</h4>
         {% endif %}
-    </ul>
+    </ul> -->
 </div>
 
 
