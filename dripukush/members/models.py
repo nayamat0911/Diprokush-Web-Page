@@ -25,7 +25,7 @@ class Members(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     image = models.ImageField(upload_to='member/member_img' ,blank=True)
-    office_address = models.CharField(max_length=30)
+    office_address = models.CharField(max_length=100)
     city = models.CharField(max_length=30)
     description = models.CharField(max_length=100)
 
