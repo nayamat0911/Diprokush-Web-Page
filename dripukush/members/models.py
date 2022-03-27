@@ -1,3 +1,5 @@
+
+from distutils.command.upload import upload
 from django.db import models
 from django.db.models.deletion import CASCADE
 
@@ -22,7 +24,7 @@ class Members(models.Model):
     employee_info = models.ForeignKey(Office, on_delete=models.CASCADE)
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
-    
+    image = models.ImageField(upload_to='member/member_img' ,blank=True)
     office_address = models.CharField(max_length=30)
     city = models.CharField(max_length=30)
     description = models.CharField(max_length=100)
