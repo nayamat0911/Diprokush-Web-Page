@@ -1,7 +1,7 @@
 from django import forms
 from django.shortcuts import redirect, render
 
-import members
+
 
 # Create your views here.
 def member_page(request):
@@ -17,7 +17,7 @@ from members import forms
 def member_form(request):
     form =forms.MembersForm()
     if request.method == 'POST':
-        form=forms.MembersForm(request.POST)
+        form=forms.MembersForm(request.POST, request.FILES)
         if form.is_valid():
             form.save(commit=True)
             
@@ -48,13 +48,23 @@ def members_list(request):
 
 def members_info(request,member_id):
     member_info_pky = Members.objects.get(pk=member_id)
-    zoon_info_pky = ZoonList.objects.get(pk=member_id)
+    # zoon_info_pky = ZoonList.objects.get(pk=member_id)
 
     diction={
         'title':'Member info',
         'member_info__':'Member Information',
         'member_show_info':member_info_pky,
-        'zoon_show_info':zoon_info_pky
+        # 'zoon_show_info':zoon_info_pky
     }
     return render(request, 'member_sec/member_info.html', context=diction)
+
+
+
+#=================member add process=============
+def How_to_add(request):
+    diction={
+        'title':'How to add',
+        'text':'Member Add Process'
+    }
+    return render(request, 'member_sec/How_to_add.html', context=diction)
 

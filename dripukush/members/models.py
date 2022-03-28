@@ -2,7 +2,7 @@
 from distutils.command.upload import upload
 from django.db import models
 from django.db.models.deletion import CASCADE
-
+from session.models import UserProfile
 # Create your models here.
 
 
@@ -21,13 +21,24 @@ class Office(models.Model):
 
     
 class Members(models.Model):
-    employee_info = models.ForeignKey(Office, on_delete=models.CASCADE)
+    # employee_info = models.ForeignKey(Office, on_delete=models.CASCADE ,related_name='member_pro')
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
-    image = models.ImageField(upload_to='member/member_img' ,blank=True)
+    POST_CATAGORY=(
+        ('------Select------', '------select------'),
+        ('Excutive Engineer','Excutive Engineer'),
+        ('Sub-Divisional Engineer','Sub-Divisional Engineer'),
+        ('Assistant Engineer','Assistant Engineer'),
+        ('Sub-Assistant Engineer','Sub-Assistant Engineer'),
+    )
+    post = models.CharField(max_length=200, choices=POST_CATAGORY, default='')
     office_address = models.CharField(max_length=100)
     city = models.CharField(max_length=30)
-    description = models.CharField(max_length=100)
+    dipu_id = models.CharField(max_length=30 , blank=True)
+    ideb_id = models.CharField(max_length=30 , blank=True)
+    payment = models.IntegerField(default='500', blank=True)
+    Bio = models.CharField(max_length=300, default="")
+    image = models.ImageField(upload_to='member_pic' ,blank=True)
 
     def __str__(self):
         return str(self.first_name + ' '+ self.last_name)

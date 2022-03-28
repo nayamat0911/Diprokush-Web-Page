@@ -6,5 +6,6 @@ urlpatterns = [
     path('', views.member_page, name='member_page'),
     path('member-form/', views.member_form, name='member_form'),
     path('member-list/', views.members_list, name='members_list'),
+    path('add-process/', views.How_to_add, name='How_to_add'),
     path('member-info/<int:member_id>/', views.members_info, name='members_info'),
 ]

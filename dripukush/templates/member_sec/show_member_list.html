@@ -14,58 +14,60 @@
 
 <div class="member_list container">
     <table>
-        <thead>
+        
             <tr>
+                <td>Si. No</td>
                 <td>Image: </td>
                 <td>Name:</td>
                 <td>dipu id:</td>
                 <td>Ideb id:</td>
                 <td>Office:</td>
-<<<<<<< HEAD
-                <td class="payment_cell"> <h6>Payment</h6>
+                <td colspan="3" class="payment_cell" style="border-right: none; text-align: center;"> Payment
                     <table style="width: 100%;" class="inside_tble">
-                        <tr class="tr">
-                            <td class="td">January</td>
-                            <td>January</td>
-                            <td>January</td>
-                        </tr>
+                        <thead>
+                            <tr class="tr">
+                                <td class="td">January</td>
+                                <td>January</td>
+                                <td>January</td>
+                            </tr>
+                            
+                        </thead>
+                        
                     </table>
 
                 </td>
-=======
-                <td>Payment</td>
->>>>>>> 1304d5e12a617b48300c8018de4c68f28ee6c47c
                 
             </tr>
             
-        </thead>
-<<<<<<< HEAD
-        <tbody>
+        
+       
             {% for member in member_show_list %}
-            {% for member_of in member_office %}
-            
-            <tr>
-                <td><img src="" alt="" srcset=""></td>
-                <td>
-                    <a href="{% url 'members_app:members_info' member_id=member.id %}">{{member.first_name}} {{member.last_name}}</a>
-                </td>
-                <td> dipukush ID</td>
-                <td>    IDEB ID</td>
-                <td>{{member_of.office_name}}<br> {{member.office_address}}, {{member.city }}</td>
+                {% for member_of in member_office %}
+                    
+                    <tr>
+                        <td>{{member.pk}}</td>
+                        <td class="text-center"><img src="/media/{{member.image}}" width="75px" height="75px" alt=""></td>
+                        <td>
+                            <a href="{% url 'members_app:members_info' member_id=member.id %}">{{member.first_name}} {{member.last_name}}</a>
+                        </td>
+                        <td> {{member.dipu_id}}</td>
+                        <td>{{member.ideb_id}}</td>
+                        <td>{{member_of.office_name}}<br> {{member.office_address}}, {{member.city }}</td>
+                        
+                        
+                        <td>dues</td>
+                        <td>paid</td>
+                        <td>paid</td>
+                    </tr>
+                {% endfor %}
+            {% endfor %}
+        
 
-            </tr>
-            {% endfor %}
-            {% endfor %}
-        </tbody>
     </table>
 
-
+<br><br><br>
 
     <!-- <ul>
-=======
-    </table>
-    <ul>
->>>>>>> 1304d5e12a617b48300c8018de4c68f28ee6c47c
         {% if member_show_list %}
         {% for member in member_show_list %}
         <li><a href="{% url 'members_app:members_info' member_id=member.id %}">{{member.first_name}} {{member.last_name}}</a></li>

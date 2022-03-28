@@ -5,4 +5,4 @@ from members import models
 class MembersForm(forms.ModelForm):
     class Meta:
         model=models.Members
-        fields="__all__"
+        exclude=["payment",]

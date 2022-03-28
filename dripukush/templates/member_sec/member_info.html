@@ -1,25 +1,80 @@
 {% extends "basic.html" %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'members/css/member.css' %}">
+
+{% endblock %}
+
+{% block title %}
+{{title}}
+{% endblock %}
 
 {% block content %}
-<h3 class="text-center m-3">{{member_info__}}</h3>
+<h3 class="text-center m-3"> Profile of {{member_show_info.first_name}} {{member_show_info.last_name}}</h3><hr> <br><br>
 
 <div class="member_info container">
     
         {% if member_show_info %}
+        <div class="container">
+              <div class="row">
+                      <div class="col-4 text-end">
+                        <div class="profile_pic">
+                                <img src="/media/{{member_show_info.image}}" width="175px" height="175px" alt=" " style="border: 2px solid #cccc;">
+                        </div>
+                        
+                      </div>
+                      <div class="col-8">
+                        <h5>Name: {{member_show_info.first_name}} {{member_show_info.last_name}}</h5>
+                        <h6>POST: {{member_show_info.post}}</h6>
+                        <p>Office Name: {{member_show_info.employee_info}}, {{zoon_show_info.zoon_name}}</p>
+                        <small>Dipukush ID: {{member_show_info.dipu_id}},</small>
+                        <small>IDEB ID: {{member_show_info.ideb_id}}</small>
+                        <p>Office Address: {{member_show_info.office_address}} </p>
+                        <p>City: {{member_show_info.city}}</p>
+                        
+                        <p>Bio: {{member_show_info.Bio}} </p>
+                        <div class="payment">
+                                <h5>Payment History</h5>
+                                <table>
+                                        <thead>
+                                                <tr>
+                                                        <td>January</td>                                           
+                                                        <td>Febarury</td>                                           
+                                                        <td>March</td>                                           
+                                                        <td>April</td>                                           
+                                                        <td>May</td>                                           
+                                                        <td>June</td>                                           
+                                                            
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>5000</td>
+                                                        <td>5000</td>
+                                                        <td>5000</td>
+                                                        <td>5000</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                </tr>
+                                        </tbody>
+                                </table>
+                                <input type="submit", class="mt-3 btn btn-success" name="submit", value="Payment">
+                        </div>
+                        
+
+                      </div>
+              </div>  
+        </div>
         
-        <h2>Name: {{member_show_info.first_name}} {{member_show_info.last_name}}</h2>
-        <h5>Office Name: {{member_show_info.employee_info}}, {{zoon_show_info.zoon_name}} </h5>
-        <h5>Office Address: {{member_show_info.office_address}} </h5>
-        <p>City: {{member_show_info.city}} </p>
-        <p>Description: {{member_show_info.description}} </p>
         
         
         
         {% else %}
         <h4>No Member</h4>
         {% endif %}
-        <input type="submit", class="mt-3 btn btn-success" name="submit", value="Update">
-        <input type="submit", class="mt-3 btn btn-danger" name="submit", value="Delete">
+        <br><br>
+        <!--<input type="submit", class="mt-3 btn btn-danger" name="submit", value="Delete"> -->
 
 </div>
 
