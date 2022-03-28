@@ -33,7 +33,6 @@ def member_form(request):
 from .models import Members,ZoonList,Office
 
 def members_list(request):
-
     office = Office.objects.order_by('zoon_list')
     member = Members.objects.order_by('first_name')
 
