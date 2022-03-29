@@ -82,7 +82,7 @@
                     <div class="card">
                         
                         <div class="card-body">
-                          <h5 class="card-title"><a href="">All Member Info</a> </h5>
+                          <h5 class="card-title"><a href="{% url 'zoon_profile:ComillaMember' %}">All Member Info</a> </h5>
     
                           <div class="ctg_Zoon_btn">
                             <a href="#" class="btn">See More</a>
@@ -108,7 +108,15 @@
 
 </section>
 
+<h3>Comilla Zone Member List </h3>
 
+<ul>
+    {% for list in show_list %}
+    <li>
+        {{list}}
+    </li>
+    {% endfor %}
+</ul>
 
 
 
