@@ -113,7 +113,7 @@ def Power_plantMember(request):
     member_ctg = Members.objects.filter(city__icontains='Power plant')
     diction={
         'title':'Power-plant',
-        'zoon_text':'This is Power Zo Plant zone Member List',
+        'zoon_text':'Power Zo Plant zone Member List',
         'show_list':member_ctg,
     }
     return render(request, 'zoon/power_plnt/pow_plnt_mem.html', context=diction)
