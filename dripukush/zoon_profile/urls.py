@@ -5,5 +5,5 @@ urlpatterns = [
     path('zoon1/', views.Chittagong, name='chittagong_page'),
     path('zoon2/', views.Cumilla, name='cumilla_page'),
     path('zoon3/', views.Syllet, name='syllet_page'),
-    # path('home/', views.home, name='home'),
+    path('ctg-member/', views.ChittagongMember, name='ChittagongMember'),
 ]

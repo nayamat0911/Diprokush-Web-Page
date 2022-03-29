@@ -9,6 +9,74 @@
 {% endblock %}
 
 {% block content %}
+
 <h1 class="text-center">{{zoon_text}}</h1>
-<h3>Zoon section</h3>
+
+
+<h3>Syllet Zone Member List </h3>
+
+<ul>
+    {% for list in show_list %}
+    <li>
+        {{list}}
+    </li>
+    {% endfor %}
+</ul>
+
+
+
+
+
+
+
+
+
+<!-- <div class="member_list container">
+    <div class="container">
+    <table>
+        <thead>
+            <tr>
+                <td>Si. No</td>
+                <td>Image: </td>
+                <td>Name:</td>
+                <td>ID<br>(DIPU)</td>
+                <td>ID<br>(IDEB)</td>
+                <td>Office:</td>
+                <td colspan="3" class="payment_cell" style="border-right: none; text-align: center;"> Payment
+                    <table style="width: 100%;" class="inside_tble">
+                        <thead>
+                            <tr class="tr">
+                                <td class="td">January</td>
+                                <td>January</td>
+                                <td>January</td>
+                            </tr>                           
+                        </thead>
+                    </table>
+                </td>        
+            </tr> 
+        </thead>
+        <tbody>
+            {% for member in member_show_list %}
+            <tr>
+                <td>{{member.pk}}</td>
+                <td class="text-center">
+                    <img src="/media/{{member.image}}" width="75px" height="75px" alt="">
+                </td>
+                <td>
+                    <a href="{% url 'members_app:members_info' member_id=member.id %}">{{member.first_name}} {{member.last_name}}</a>
+                </td>
+                <td>{{member.dipu_id}}</td>
+                <td>{{member.ideb_id}}</td>
+                <td>{{member_office.office_name}}<br> {{member.office_address}}, {{member.city }}</td>
+                <td>dues</td>
+                <td>paid</td>
+                <td>paid</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+<br><br><br>
+</div>
+</div> -->
 {% endblock %}

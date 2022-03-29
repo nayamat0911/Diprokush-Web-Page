@@ -16,17 +16,24 @@ from members import forms
 
 def member_form(request):
     form =forms.MembersForm()
+    zone_form =forms.ZoneForm()
+    # office_form =forms.officeForm()
     if request.method == 'POST':
         form=forms.MembersForm(request.POST, request.FILES)
-        if form.is_valid():
+        zone_form=forms.ZoneForm(request.POST)
+        # office_form=forms.officeForm(request.POST)
+        if form.is_valid() and zone_form.is_valid():
             form.save(commit=True)
-            
+            zone_form.save(commit=True)
+            # office_form.save(commit=True)
             return redirect('members_app:members_list')
 
     diction={
         'title':'members form',
         'member_title':'Add Member',
-        'member_add_form':form
+        'member_add_form':form,
+        'zone_form':zone_form,
+        # 'office_form':office_form,
     }
     return render(request, 'member_sec/members_form.html', context=diction)
 

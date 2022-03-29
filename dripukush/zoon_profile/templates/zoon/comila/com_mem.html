@@ -1,0 +1,24 @@
+{% extends "basic.html" %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'members/css/member.css' %}">
+{% endblock %}
+
+{% block title %}
+{{title}}
+{% endblock %}
+
+{% block content %}
+<div class="member_list">
+    <h3>Cumilla Zone Member List </h3>
+
+<ul>
+    {% for list in show_list %}
+    <li>
+        {{list}}
+    </li>
+    {% endfor %}
+</ul>
+</div>
+{% endblock %}

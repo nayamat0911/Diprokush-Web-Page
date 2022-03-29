@@ -7,7 +7,16 @@ from session.models import UserProfile
 
 
 class ZoonList(models.Model):
-    zoon_name = models.CharField(max_length=50)
+    ZONE_NAME=(
+        ('--Select--', '--select--'),
+        ('Dhaka', 'Dhaka'),
+        ('Chittangog', 'Chittangog'),
+        ('Cumilla', 'Cumilla'),
+        ('Maymoshing', 'Maymoshing'),
+        ('Syllet', 'Syllet'),
+        ('Power plant', 'Power plant'),
+    )
+    zoon_name = models.CharField(max_length=200, choices=ZONE_NAME)
 
     def __str__(self):
         return self.zoon_name
@@ -22,6 +31,7 @@ class Office(models.Model):
     
 class Members(models.Model):
     # employee_info = models.ForeignKey(Office, on_delete=models.CASCADE ,related_name='member_pro')
+    
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     POST_CATAGORY=(
