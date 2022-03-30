@@ -3,13 +3,32 @@
 
 {% block style %}
 <link rel="stylesheet" href="{% static 'members/css/member.css' %}">
+
 {% endblock %}
+
 
 {% block title %}
 {{title}}
 {% endblock %}
 
 {% block content %}
+
+<section>
+    <div class="container serarch-sec p-5">
+        <div class="container member_search_menu">
+            <div class="row">
+                <div class="col ">
+                    <form class="d-flex text-center" style="width: 60%; margin-left: 20%;">
+                        <input class="form-control me-2" type="search" placeholder="Search Member" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
 <h3 class="text-center m-3">{{member_title}}</h3>
 
 <div class="member_list container">

@@ -10,15 +10,68 @@
 {% endblock %}
 
 {% block content %}
-<div class="member_list">
-    <h3>Moymonshing Zone Member List </h3>
+<section class="member_search">
+    <div class="container serarch-sec p-5">
+        <!-- <h3 class="text-center pb-2">Chittagong Zone Member List </h3> -->
+        <h3 class="text-center pb-2">{{zoon_text}}</h3>
+        <div class="container member_search_menu">
+            <div class="row">
+                <div class="col ">
+                    <form class="d-flex text-center" style="width: 60%; margin-left: 20%;">
+                        <input class="form-control me-2" type="search" placeholder="Search Member" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<ul>
-    {% for list in show_list %}
-    <li>
-        {{list}}
-    </li>
-    {% endfor %}
-</ul>
-</div>
+<section class="member_list">
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <td>Si. No</td>
+                    <td>Image: </td>
+                    <td>Name:</td>
+                    <td>ID<br>(DIPU)</td>
+                    <td>ID<br>(IDEB)</td>
+                    <td>Office:</td>
+                    <td colspan="3" class="payment_cell" style="border-right: none; text-align: center;"> Payment
+                        <table style="width: 100%;" class="inside_tble">
+                            <thead>
+                                <tr class="tr">
+                                    <td class="td">January</td>
+                                    <td>January</td>
+                                    <td>January</td>
+                                </tr>                           
+                            </thead>
+                        </table>
+                    </td>       
+                </tr>
+            </thead>
+            <tbody>
+                {% for member in show_list %}
+                <tr>
+                    <td>{{member.pk}}</td>
+                    <td class="text-center">
+                        <img src="/media/{{member.image}}" width="75px" height="75px" alt="">
+                    </td>
+                    <td>
+                        <a href="{% url 'members_app:members_info' member_id=member.id %}">{{member.first_name}} {{member.last_name}}</a>
+                    </td>
+                    <td>{{member.dipu_id}}</td>
+                    <td>{{member.ideb_id}}</td>
+                    <td>{{member_office.office_name}}<br> {{member.office_address}}, {{member.city }}</td>
+                    <td>dues</td>
+                    <td>paid</td>
+                    <td>paid</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+</section>
 {% endblock %}

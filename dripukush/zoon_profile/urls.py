@@ -20,5 +20,8 @@ urlpatterns = [
     path('moy-member/', views.MoymonshinMember, name='MoymonshinMember'),
     path('pp-member/', views.Power_plantMember, name='Power_plantMember'),
     
-    #comittee
+    #comittee info personal 
+    path('all_comite/', views.AllComite, name='AllComite'),
+    path('info/', views.CommitteDetails, name='CommitteDetails'),
+
 ]

@@ -1,0 +1,58 @@
+{% extends "basic.html" %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'members/css/member.css' %}">
+
+{% endblock %}
+
+{% block title %}
+{{title}}
+{% endblock %}
+
+{% block content %}
+<h3 class="text-center m-3 pt-3"> Profile of Engr A.K.M Hamidur</h3><hr> 
+
+<div class="member_info container">
+    
+        
+        <div class="container">
+              <div class="row" style="border: 2px solid #000;">
+                      <div class="col-4 text-end">
+                        <div class="profile_pic text-center pt-5">
+                                <img src="{% static 'zone/img/ctg/d.jpg' %}" width="300px" height="300px" alt=" " style="border: 2px solid #cccc;">
+                                <!-- <img src="{% static 'zone/img/ctg/d.jpg' %}" class="card-img-top" alt="..."> -->
+                        </div>
+                        
+                      </div>
+                      <div class="col-8 pt-3">
+                        <h5>Name: Engr A.K.M Hamidur</h5>
+                        <h6><b>POST:</b> Sub-Divissional Engineer</h6>
+                        <small><b>Office Name:</b>  Scada Operation Division</small><br>
+                        <small><b>Office Address:</b>  Foyes Lake, khulshi, Chittagong </small><br>
+                        <small><b>Dipukush ID:</b> dip-33940,</small>
+                        <small><b>IDEB ID:</b>  ib-34-2344</small><br>
+                        <small><b>Mobile:</b> +880173240231</small><br> 
+                        <p><b>Email:</b>  abcde@gmail.com</p><br>
+                        
+                        <p><b>Home Town:</b>  shait shala, Bepara, Comilla</p> <br>
+                        <p><b>Job Description:</b>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi illum eum reprehenderit consectetur, ad ab quaerat in laboriosam. Repellendus nihil quaerat ipsa, voluptate cupiditate consectetur quasi voluptatibus obcaecati quibusdam eius.    Provident ducimus inventore animi. Fuga similique necessitatibus enim explicabo animi. Iste, quasi. Amet doloremque expedita et quo veritatis laudantium, est quia distinctio. </p>
+                        <br>
+                        
+                        <button class="btn btn-lg btn-primary ">Message</button><br><br><br>
+                      </div>
+              </div>  
+        </div>
+        
+        
+        
+        
+        
+        <br><br>
+        <!--<input type="submit", class="mt-3 btn btn-danger" name="submit", value="Delete"> -->
+
+</div>
+
+
+{% endblock %}
+   

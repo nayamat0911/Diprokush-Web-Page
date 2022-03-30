@@ -9,7 +9,7 @@ def Dhaka(request):
         'title':'dhaka',
         'zoon_text':'Dhaka Zoon page',
     }
-    return render(request, 'zoon/Dhaka.html', context=diction)
+    return render(request, 'zoon/main/Dhaka.html', context=diction)
 
 def DhakaMember(request):
     member_dha = Members.objects.filter(city__icontains='dhaka')
@@ -29,7 +29,7 @@ def Chittagong(request):
         'title':'ctg',
         'zoon_text':'Chitagong Zoon page',
     }
-    return render(request, 'zoon/chittagong.html', context=diction)
+    return render(request, 'zoon/main/chittagong.html', context=diction)
 
 def ChittagongMember(request):
     member_ctg = Members.objects.filter(city__icontains='chittagong')
@@ -49,7 +49,7 @@ def Cumilla(request):
         'zoon_text':'Cumilla Zoon page',
          'show_list':member_com,
     }
-    return render(request, 'zoon/cumilla.html', context=diction)
+    return render(request, 'zoon/main/cumilla.html', context=diction)
 
 def ComillaMember(request):
     member_com = Members.objects.filter(city__icontains='comilla')
@@ -73,7 +73,7 @@ def Syllet(request):
         # 'show_list':zone,
         'show_list':member,
     }
-    return render(request, 'zoon/syllet.html', context=diction)
+    return render(request, 'zoon/main/syllet.html', context=diction)
 
 def SylletMember(request):
     member_syl = Members.objects.filter(city__icontains='Syllet')
@@ -93,7 +93,7 @@ def Moymonshing(request):
         'title':'Moymonshing',
         'zoon_text':'Moymonshing Zoon page',
     }
-    return render(request, 'zoon/moymonshin.html', context=diction)
+    return render(request, 'zoon/main/moymonshin.html', context=diction)
 
 
 def MoymonshinMember(request):
@@ -112,16 +112,34 @@ def MoymonshinMember(request):
 def Power_Plant(request):
     diction={
         'title':'power-Plant',
-        'zoon_text':'Power Plant Zoon page',
+        'zoon_text':'Power Plant page',
     }
-    return render(request, 'zoon/Power_plant.html', context=diction)
+    return render(request, 'zoon/main/Power_plant.html', context=diction)
 
 
 def Power_plantMember(request):
     member_powp = Members.objects.filter(city__icontains='Power plant')
     diction={
         'title':'p-p-m',
-        'zoon_text':'Power Plant zone Member List',
+        'zoon_text':'Power Plant Member List',
         'show_list':member_powp,
     }
     return render(request, 'zoon/power_plnt/pow_plnt_mem.html', context=diction)
+
+
+
+def AllComite(request):
+    dection_co={
+        'title':'commitee',
+        'text': 'all Commite member in CTG'
+    }
+    return render(request, 'zoon/committeMember/all_comite.html', context=dection_co)
+
+
+def CommitteDetails(request):
+    decinfo={
+        'title':'committe',
+        'text':'this is commitee info page'
+
+    }
+    return render(request, 'zoon/committeMember/comit_person_info.html', context=decinfo)
