@@ -1,4 +1,3 @@
-
 from django.db import models
 from members.models import Members
 # Create your models here.
