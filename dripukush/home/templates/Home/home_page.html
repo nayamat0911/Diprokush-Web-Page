@@ -2,6 +2,7 @@
 {% load static %}
 {% block style %}
 <link rel="stylesheet" href="{% static 'home/css/home.css' %}">
+
 {% endblock %}
 
 {% block title %}
@@ -19,7 +20,7 @@
 
 
     </div>
-    <img src="{% static 'home/img/b.jpg' %}" alt="">
+    <img src="{% static 'home/img/home.jpg' %}" alt="">
 </div>
 
 <section>
@@ -40,7 +41,7 @@
             <div class="row at">
               <!---zone section--->
               <div class="col-12 col-md-4 col-sm-6 col-lg-3">
-                  <a href="{% url 'zoon_profile:syllet_page' %}">
+                  <a href="{% url 'zoon_profile:dhaka_page' %}">
                       <div class="card">
                           <div class="card-header">
                               <h4>Dhaka</h4>
@@ -51,8 +52,8 @@
                               </div>
                               <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nobis</p> -->
                               <ul class="zoon_link_item">
-                                  <li><a href=""><span>&#10026; </span> See Commitee Mambers</a></li>
-                                  <li><a href=""><span>&#10026; </span>See all Mambers list</a></li>
+                                  <li><a href="{% url 'zoon_profile:AllComite' %}"><span>&#10026; </span> See Commitee Mambers</a></li>
+                                  <li><a href="{% url 'zoon_profile:DhakaMember' %}"><span>&#10026; </span>See all Mambers list</a></li>
                                   <li><a href=""><span>&#10026; </span>Latest News list</a></li>
                                   <li><a href=""><span>&#10026; </span>Notice</a></li>
                               </ul>
@@ -94,8 +95,8 @@
                                 </div>
                                 <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nobis</p> -->
                                 <ul class="zoon_link_item">
-                                    <li><a href=""><span>&#10026; </span> See Commitee Mambers</a></li>
-                                    <li><a href=""><span>&#10026; </span>See all Mambers list</a></li>
+                                    <li><a href="{% url 'zoon_profile:AllComite' %}"><span>&#10026; </span> See Commitee Mambers</a></li>
+                                    <li><a href="{% url 'zoon_profile:ChittagongMember' %}"><span>&#10026; </span>See all Mambers list</a></li>
                                     <li><a href=""><span>&#10026; </span>Latest News list</a></li>
                                     <li><a href=""><span>&#10026; </span>Notice</a></li>
                                 </ul>
@@ -115,8 +116,8 @@
                                 </div>
                                 <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nobis</p> -->
                                 <ul class="zoon_link_item">
-                                    <li><a href=""><span>&#10026; </span> See Commitee Mambers</a></li>
-                                    <li><a href=""><span>&#10026; </span>See all Mambers list</a></li>
+                                    <li><a href="{% url 'zoon_profile:AllComite' %}"><span>&#10026; </span> See Commitee Mambers</a></li>
+                                    <li><a href="{% url 'zoon_profile:ComillaMember' %}"><span>&#10026; </span>See all Mambers list</a></li>
                                     <li><a href=""><span>&#10026; </span>Latest News list</a></li>
                                     <li><a href=""><span>&#10026; </span>Notice</a></li>
                                 </ul>
@@ -125,7 +126,7 @@
                     </a>
                 </div>
                 <div class="col-12 col-md-4 col-sm-6 col-lg-3">
-                    <a href="{% url 'zoon_profile:chittagong_page' %}">
+                    <a href="{% url 'zoon_profile:maymonshing_page' %}">
                         <div class="card">
                             <div class="card-header">
                                 <h4>Maymoshing</h4>
@@ -137,7 +138,7 @@
                                 <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nobis</p> -->
                                 <ul class="zoon_link_item">
                                     <li><a href=""><span>&#10026; </span> See Commitee Mambers</a></li>
-                                    <li><a href=""><span>&#10026; </span>See all Mambers list</a></li>
+                                    <li><a href="{% url 'zoon_profile:MoymonshinMember' %}"><span>&#10026; </span>See all Mambers list</a></li>
                                     <li><a href=""><span>&#10026; </span>Latest News list</a></li>
                                     <li><a href=""><span>&#10026; </span>Notice</a></li>
                                 </ul>
@@ -158,7 +159,7 @@
                                 <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nobis</p> -->
                                 <ul class="zoon_link_item">
                                     <li><a href=""><span>&#10026; </span> See Commitee Mambers</a></li>
-                                    <li><a href=""><span>&#10026; </span>See all Mambers list</a></li>
+                                    <li><a href="{% url 'zoon_profile:SylletMember' %}"><span>&#10026; </span>See all Mambers list</a></li>
                                     <li><a href=""><span>&#10026; </span>Latest News list</a></li>
                                     <li><a href=""><span>&#10026; </span>Notice</a></li>
                                 </ul>
@@ -168,7 +169,7 @@
                 </div>
 
                 <div class="col-12 col-md-4 col-sm-6 col-lg-3">
-                    <a href="{% url 'commitee_app:commitee' %}">
+                    <a href="{% url 'zoon_profile:Power_Plant_page' %}">
                         <div class="card">
                             <div class="card-header">
                                 <h4>Power plant</h4>
@@ -180,7 +181,7 @@
 
                                 <ul class="zoon_link_item">
                                     <li><a href=""><span>&#10026; </span> See Commitee Mambers</a></li>
-                                    <li><a href=""><span>&#10026; </span>See all Mambers list</a></li>
+                                    <li><a href="{% url 'zoon_profile:Power_plantMember' %}"><span>&#10026; </span>See all Mambers list</a></li>
                                     <li><a href=""><span>&#10026; </span>Latest News list</a></li>
                                     <li><a href=""><span>&#10026; </span>Notice</a></li>
                                 </ul>
